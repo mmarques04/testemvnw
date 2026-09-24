@@ -25,6 +25,8 @@ pipeline {
 
         stage('2 - CI - Testes JUnit + JaCoCo') {
             steps {
+                bat 'echo %PATH%'
+                bat 'where mvn'
                 bat './mvnw.cmd clean test'
             }
             post {
