@@ -25,7 +25,7 @@ pipeline {
 
         stage('2 - CI - Testes JUnit + JaCoCo') {
             steps {
-                bat './mvnw clean test'
+                bat './mvnw.cmd clean test'
             }
             post {
                 always {
